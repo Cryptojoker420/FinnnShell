@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["react", "react-dom", "node"],
+
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
+
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "next-auth.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "test/**/*.ts"             // 👈 Ensures Playwright tests are included
+  ],
+  "exclude": [
+    "node_modules",
+    "scripts",
+    "patch-radix-icons.ts",
+    "patched-backups",
+    "other",
+    "zips",
+    "codemods",
+    "other/scripts copy",
+    "f",
+    "playwright-report",
+    ".vscode",
+    "predeploy",
+    "Trash"
+  ]
+}

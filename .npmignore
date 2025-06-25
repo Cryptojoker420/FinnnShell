@@ -1,0 +1,68 @@
+# Build output
+.next/
+out/
+tsconfig.tsbuildinfo
+# Dependency folders
+node_modules/
+.vscode/
+f
+#Env
+.env 
+.env.local
+Trash
+
+# Test & reporting
+e2e/
+logs/
+patched-backups/
+playwright-report/
+test-results/
+coverage/
+*.log
+*.txt
+*.html
+FINN_KEY_OVERVIEW.md
+supabase_policies_dump.csv
+t
+b
+vscode
+APPLE
+scripts/
+predeploy/
+AUTH_LOGIC_MAP/
+*.yaml
+*.py
+*.jpeg
+*.png
+*.jpg
+*.mp4
+*.mov
+
+# OS / editor / cache
+.DS_Store
+Thumbs.db
+.idea/
+.cache/
+.env
+.env.local
+# Optional: ignore everything by default, then whitelist your folders
+# Uncomment this block if you want to *only* allow what you listed
+# *
+# !api/
+# !app/
+# !backend/
+# !code/
+# !components/
+# !lib/
+# !public/
+# !types/
+# !utils/
+# !.env
+# !.env.local
+# !global.d.ts
+# !next.config.js
+# !next-env.d.ts
+# !postcss.config.js
+# !prettier.config.cjs
+# !tailwind.config.js
+# !tsconfig.json
