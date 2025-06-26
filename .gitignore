@@ -30,7 +30,6 @@ APPLE
 scripts/
 predeploy/
 AUTH_LOGIC_MAP/
-*.yaml
 *.py
 *.jpeg
 *.png
@@ -75,3 +74,4 @@ Thumbs.db
 .env
 .env.*
 
+.vercel
