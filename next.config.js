@@ -22,9 +22,7 @@ const nextConfig = {
   },
   experimental: {
     scrollRestoration: true,
-
-    // ✅ Suppress dynamic usage warnings for cookies(), headers(), etc.
-    serverActions: true,
+    // serverActions: true, // Removed: Server Actions are enabled by default in Next.js 14+
     typedRoutes: true,
     serverComponentsExternalPackages: ['@supabase/*'],
   },
