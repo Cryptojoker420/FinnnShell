@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 export default function AuthCodeErrorPage() {
   return (
     <div className="flex items-center justify-center h-screen p-4">
