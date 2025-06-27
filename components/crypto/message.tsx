@@ -33,7 +33,7 @@ export function BotMessage({ content, className }: BotMessageProps) {
 
   return (
     <div className={cn("group relative flex items-start md:-ml-12", className)}>
-      <div className="flex size-[24px] shrink-0 select-none items-center justify-center rounded-md border bg-[#f55036] text-primary-foreground shadow-sm">
+      <div className="flex size-[24px] shrink-0 select-none items-center justify-center rounded-md border bg-purple-200 text-primary-foreground shadow-sm">
         <IconFinn />
       </div>
       <div className="ml-4 flex-1 space-y-2 overflow-hidden px-1">

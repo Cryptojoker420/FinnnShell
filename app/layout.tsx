@@ -11,6 +11,7 @@ import {
   createServerComponentClient,
 } from '@supabase/auth-helpers-nextjs';
 import RootClient from './root-client';
+import { getURL } from '@/lib/utils/getURL';
 
 const geistSans = localFont({
   src: '../public/fonts/GeistVariable.woff2',
@@ -25,12 +26,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ??
-      (process.env.VERCEL_URL
-        ? `http://${process.env.VERCEL_URL}`
-        : 'http://localhost:3000'),
-  ),
+  metadataBase: new URL(getURL()),
   title: {
     default: 'FinnShell',
     template: '%s - FinnShell powered by Gary',

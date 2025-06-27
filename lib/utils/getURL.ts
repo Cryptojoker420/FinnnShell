@@ -1,9 +1,8 @@
-export const getURL = () => {
-  let url =
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    (process.env.NEXT_PUBLIC_VERCEL_URL
-      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-      : "http://localhost:3000");
-
-  return url.replace(/\/$/, "");
-};
+export function getURL() {
+  return (
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://finnshell.vercel.app")
+  );
+}

@@ -4,6 +4,8 @@
 # working directory name when running `supabase init`.
 project_id = "predeploy3"
 
+# NOTE: For production, update [auth] site_url and additional_redirect_urls to your deployed URL, e.g. https://finnshell.vercel.app
+
 [api]
 enabled = true
 # Port to use for the API URL.

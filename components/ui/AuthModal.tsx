@@ -210,15 +210,17 @@ export default function AuthModal() {
             >
               {mode === "login" ? "Log in" : "Sign up"}
             </button>
-            <ConnectKitButton />
-            {isConnected && (
-              <button
-                onClick={handleWalletAuth}
-                className={buttonVariants({ variant: "default" })}
-              >
-                Login with Wallet
-              </button>
-            )}
+            <div className="flex flex-col items-center gap-2">
+              <ConnectKitButton />
+              {isConnected && (
+                <button
+                  onClick={handleWalletAuth}
+                  className={buttonVariants({ variant: "default" })}
+                >
+                  Login with Wallet
+                </button>
+              )}
+            </div>
           </div>
         ) : (
           <div className="grid gap-4">
