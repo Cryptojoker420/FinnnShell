@@ -187,7 +187,6 @@ export default function AuthModal() {
             </button>
             <div className="flex items-center gap-2">
               <Separator className="w-full" />
-              <span className="text-sm text-muted-foreground">or</span>
               <Separator className="w-full" />
             </div>
             <Label htmlFor="email">Email</Label>
